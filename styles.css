@@ -1,0 +1,41 @@
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: rgb(193, 153, 231);
+}   
+
+
+li:hover {
+    background-color:blueviolet;
+    font-style: italic;
+}
+
+
+li:active {
+    background-color:rgb(177, 42, 235);
+    font-size: 20px;
+}
+
+
+li::before {
+    content: "✅";
+}
+
+
+li:hover::after {
+    content:"Pick me!! Pick me!!!";
+    margin-left: 6px;
+    font-weight: bold;
+}
+
+
+li:active::after {
+    content:"Yay!!!";
+}
+
+
+li:active::before {
+    content:"🤪"
+}
